@@ -9,4 +9,6 @@ def append_file(file_name, append_content):
 
 
 def read_file(file_name):
-    pass
+    with open(f"{file_name}", mode='r', encoding='utf-8') as c:
+        for line in c:
+            print(c)
